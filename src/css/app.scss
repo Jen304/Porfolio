@@ -1,0 +1,23 @@
+// app global css in SCSS form
+.title{
+    font-family: $title-font;
+    color: $accent;
+}
+h4,h5{
+    color: $accent ;
+    font-family: $header-font;
+}
+
+.vue-typer {
+    font-family: $header-font;
+  }
+  .vue-typer .custom.char.typed {
+    color: $accent !important;
+  }
+  .vue-typer .custom.char.selected {
+    color: $secondary;
+  }
+  .vue-typer .custom.caret.typing {
+    background-color: $accent;
+  }
+  
