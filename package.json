@@ -10,13 +10,14 @@
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
     "format": "prettier --write \"{,!(node_modules)/**/}*.(js|vue)\"",
-    "lintFix":  "eslint --fix .js,.vue ./"
+    "lintFix": "eslint --fix --ext .js,.vue ./"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.6.5",
     "lodash": "^4.17.19",
     "quasar": "^1.0.0",
+    "vue-scrollto": "^2.18.1",
     "vue-typer": "^1.2.0"
   },
   "devDependencies": {

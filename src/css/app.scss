@@ -3,9 +3,14 @@
     font-family: $title-font;
     color: $accent;
 }
-h4,h5{
+h3,h4,h5{
     color: $accent ;
     font-family: $header-font;
+}
+.special-text{
+  font-family: $header-font;
+  font-size: 1.2em;
+  text-align: center;
 }
 
 .vue-typer {
@@ -20,4 +25,11 @@ h4,h5{
   .vue-typer .custom.caret.typing {
     background-color: $accent;
   }
-  
+.customContainer{
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+.customContainer1{
+  padding-top: 0;
+}
+

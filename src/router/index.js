@@ -16,8 +16,11 @@ Vue.use(VueRouter);
 
 export default function(/* { store, ssrContext } */) {
   const Router = new VueRouter({
-    scrollBehavior: function(to, from, savedPosition) {
-      if (to.hash) {
+    scrollBehavior(to, from, savedPosition) {
+      console.log(from);
+      if (savedPosition) {
+        return savedPosition;
+      } else if (to.hash) {
         return { selector: to.hash };
       } else {
         return { x: 0, y: 0 };

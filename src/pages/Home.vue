@@ -1,18 +1,22 @@
 <template>
-  <q-page  >
+  <q-page>
     <AboutMe />
+    <Skills />
+    <Contact />
   </q-page>
 </template>
 
 <script>
-import AboutMe from '../components/AboutMe'
+import AboutMe from "../components/AboutMe";
+import Skills from "../components/Skills";
+import Contact from "../components/Contact";
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     AboutMe,
+    Skills,
+    Contact
   }
-}
+};
 </script>
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

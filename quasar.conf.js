@@ -92,7 +92,7 @@ module.exports = function(/* ctx */) {
 
     animations: "all", // --- includes all animations
     // https://quasar.dev/options/animations
-    animations: ["bounce"],
+    //animations: ["bounce"],
 
     // https://quasar.dev/quasar-cli/developing-ssr/configuring-ssr
     ssr: {
