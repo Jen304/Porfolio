@@ -5,18 +5,18 @@
       id="contact"
       flat
     >
-      <h3 class="text-center text-primary q-pa-xl q-ma-none">Contact me</h3>
+      <h3 class="text-center text-primary q-pt-lg q-ma-none">Contact me</h3>
       <q-card-section class="special-text">
         <div>
           <p
             v-for="contact in contactList"
             :key="contact.name"
-            class="text-center"
+            class="text-center text-secondary"
           >
             {{ contact.name }} : {{ contact.content }}
           </p>
           <q-separator />
-          <h5 class="text-primary">Social channel</h5>
+          <h5 class="text-primary q-ma-md">Social channel</h5>
           <div class="row wrap justify-around items-center content-center">
             <q-item v-for="channel in socialMedia" :key="channel.name">
               <q-btn

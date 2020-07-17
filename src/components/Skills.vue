@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white customContainer q-pb-xl" id="skills">
-    <h3 class="text-center">Skills</h3>
+    <h3 class="text-center q-ma-none">Skills</h3>
     <div>
       <h4 class="text-center skill-title">Front-end</h4>
       <q-card class="my-card" v-for="(item, i) in frontEnd" :key="i">
