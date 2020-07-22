@@ -1,8 +1,8 @@
 {
   "name": "porfolio-new",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "description": "Porfolio",
+  "productName": "Jen Hoang",
   "author": "Jen",
   "private": true,
   "scripts": {
