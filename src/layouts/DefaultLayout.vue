@@ -91,7 +91,6 @@ export default {
           icon: "eva-smiling-face-outline"
         },
         { title: "Skills", link: "/#skills", icon: "eva-bulb-outline" },
-        { title: "Projects", link: "/#project", icon: "eva-browser-outline" },
         {
           title: "Contact",
           link: "#contact",
