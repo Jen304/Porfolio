@@ -64,6 +64,7 @@
       <!-- This is where pages get injected -->
       <router-view />
     </q-page-container>
+    <Contact />
   </q-layout>
 </template>
 
@@ -71,12 +72,14 @@
 import debounce from "lodash/debounce";
 import EssentialLink from "components/EssentialLink";
 import MainBanner from "components/MainBanner";
+import Contact from "components/Contact";
 
 export default {
   // name: 'LayoutName',
   components: {
     EssentialLink: EssentialLink,
-    MainBanner: MainBanner
+    MainBanner: MainBanner,
+    Contact: Contact
   },
   data() {
     return {
