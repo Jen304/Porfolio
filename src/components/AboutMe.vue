@@ -6,11 +6,11 @@
     <div class="child">
       <h3 class="q-my-none">About Me</h3>
       <h5 class="q-my-sm">An aspiring full-stack developer</h5>
-      <p>
-        I am a passionate software engineer with x years of working experience.
-        I built OSS tools for Kubernetes using GO. My tools help people to
-        deploy their workloads in Kubernetes. Sometimes, I work on some fun
-        projects such as writing a theme, etc.
+      <p class="text-body1">
+        I am a student with a great passion for programming and technology.
+        Being a self-starter, I have more than one year of experience in some
+        front-end and back-end frameworks. After I graduate I want to become a
+        full-stack developer or software engineer.
       </p>
       <q-btn color="accent" text-color="primary" label="My LinkedIn" rounded />
     </div>
