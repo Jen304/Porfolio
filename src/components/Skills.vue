@@ -11,7 +11,7 @@
             <q-img
               :src="skill.logo"
               class="q-mt-auto skill-logo"
-              :id="skill.name"
+              :id="skill.id"
             />
 
             <h5 class="q-my-xs text-center">
@@ -32,26 +32,34 @@ export default {
       skills: {
         frontEnd: [
           [
-            { name: "HTML", logo: "skills-icon/html.svg" },
-            { name: "CSS", logo: "skills-icon/css.svg" },
-            { name: "JavaScript", logo: "skills-icon/javascript.svg" }
+            { name: "HTML", logo: "skills-icon/html.svg", id: "html" },
+            { name: "CSS", logo: "skills-icon/css.svg", id: "css" },
+            {
+              name: "JavaScript",
+              logo: "skills-icon/javascript.svg",
+              id: "javascript"
+            }
           ],
           [
-            { name: "React", logo: "skills-icon/react.svg" },
-            { name: "Next", logo: "skills-icon/nextjs.svg" }
+            { name: "React", logo: "skills-icon/react.svg", id: "react" },
+            { name: "Next", logo: "skills-icon/nextjs.svg", id: "next" }
           ],
           [
-            { name: "Vue", logo: "skills-icon/vue.svg" },
-            { name: "Nuxt", logo: "skills-icon/nuxt.svg" }
+            { name: "Vue", logo: "skills-icon/vue.svg", id: "vue" },
+            { name: "Nuxt", logo: "skills-icon/nuxt.svg", id: "nuxt" }
           ]
         ],
         backEnd: [
           [
-            { name: "Django", logo: "skills-icon/django.svg" },
-            { name: "Flask", logo: "skills-icon/flask.svg" },
-            { name: "Ruby on Rails", logo: "skills-icon/ruby-on-rails.png" }
+            { name: "Django", logo: "skills-icon/django.svg", id: "django" },
+            { name: "Flask", logo: "skills-icon/flask.svg", id: "flask" },
+            {
+              name: "Ruby on Rails",
+              logo: "skills-icon/ruby-on-rails.png",
+              id: "rails"
+            }
           ],
-          [{ name: "SQL" }, { name: "MongoDB" }]
+          [{ name: "SQL", logo: "skills-icon/sql.jpg", id: "sql" }]
         ]
       }
     };
@@ -70,13 +78,22 @@ export default {
   margin-bottom: 0.5em;
 }
 .skill-logo {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
 }
-#Next {
+#next {
   width: 100px;
 }
-#Nuxt {
+#nuxt {
+  width: 67px;
+}
+#django {
+  width: 144px;
+}
+#flask {
+  width: 40px;
+}
+#rails {
   width: 80px;
 }
 </style>
