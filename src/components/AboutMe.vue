@@ -1,35 +1,41 @@
 <template>
   <div
-    class="row wrap justify-around items-center content-center customContainer"
+    class="row wrap justify-center items-center content-center customContainer"
     id="about"
   >
-    <div class="child">
-      <h3 class="q-my-none">About Me</h3>
-      <h5 class="q-my-sm">An aspiring full-stack developer</h5>
+    <div class="child content">
+      <h3 class="q-my-none text-center">About Me</h3>
+      <h5 class="q-my-sm">
+        A coding girl in a beautiful city - Victoria, Canada.
+      </h5>
       <p class="text-body1">
-        I am a student with a great passion for programming and technology.
-        Being a self-starter, I have more than one year of experience in some
-        front-end and back-end frameworks. After I graduate I want to become a
-        full-stack developer or software engineer.
+        Hi! Thanks for vistitng my website.
+        <br />
+        Triggering from curiosity, I engage in programming and become passionate
+        about Tech.
+        <br />
+        By hard-working at school and self-studying, I get some experience in
+        Front-end and Back-end frameworks, such as React, Vue and Django.
+        <br />
+        After graduation, I love to work in a tech company in Canada to learn
+        more and improve my experience from new challenges and other people.
       </p>
-      <q-btn color="accent" text-color="primary" label="My LinkedIn" rounded />
+
+      <div class="row wrap justify-around items-center content-center">
+        <q-item v-for="item in buttons" :key="item.name">
+          <q-btn
+            :color="item.color"
+            :icon="item.icon"
+            :label="item.name"
+            :href="item.url"
+            type="a"
+            target="__blank"
+            rounded
+          />
+        </q-item>
+      </div>
     </div>
-    <div class="child">
-      <q-circular-progress
-        show-value
-        v-for="(item, i) in softSkills"
-        :key="i"
-        class="text-white q-ma-md"
-        :value="item.value"
-        size="130px"
-        :thickness="0.2"
-        :color="item.color"
-        center-color="grey-8"
-        track-color="transparent"
-      >
-        <h6 class="text-subtitle2 q-ma-md">{{ item.title }}</h6>
-      </q-circular-progress>
-    </div>
+    <div class="child"></div>
   </div>
 </template>
 <script>
@@ -37,36 +43,12 @@ export default {
   // name: 'ComponentName',
   data() {
     return {
-      softSkills: [
+      buttons: [
         {
-          title: "Commitment",
-          value: 80,
-          color: "orange"
-        },
-        {
-          title: "Problem solver",
-          value: 80,
+          name: "LinkedIn",
+          icon: "eva-linkedin-outline",
+          url: "https://www.linkedin.com/in/jen-hoang/",
           color: "blue"
-        },
-        {
-          title: "Self-motivation",
-          value: 80,
-          color: "green"
-        },
-        {
-          title: "Team work",
-          value: 80,
-          color: "grey"
-        },
-        {
-          title: "Hard-working",
-          value: 80,
-          color: "yellow"
-        },
-        {
-          title: "Communication",
-          value: 80,
-          color: "red"
         }
       ]
     };
@@ -74,7 +56,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.child {
-  width: 500px;
+.content {
+  width: 40%;
+  max-width: 600px;
 }
 </style>

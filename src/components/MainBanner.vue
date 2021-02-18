@@ -1,7 +1,7 @@
 <template>
   <q-banner class="custom-banner text-white text-center relative-position">
     <div>
-      <h1 class="title">Hi, I am Jen</h1>
+      <h1 class="title">Hi, I'm Jen!</h1>
       <h4>
         <vue-typer
           :text="aboutMe"
@@ -44,9 +44,9 @@ export default {
   data() {
     return {
       aboutMe: [
-        "I'm a full-stack developer",
-        "I love coding",
-        "I love challenging"
+        "I'm a full-stack developer.",
+        "I love coding!",
+        "I love challenges!"
       ],
       classes: "animated bounce"
     };
