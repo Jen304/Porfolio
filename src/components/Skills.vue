@@ -30,7 +30,7 @@ export default {
   data() {
     return {
       skills: {
-        frontEnd: [
+        "Front-end": [
           [
             { name: "HTML", logo: "skills-icon/html.svg", id: "html" },
             { name: "CSS", logo: "skills-icon/css.svg", id: "css" },
@@ -49,7 +49,7 @@ export default {
             { name: "Nuxt", logo: "skills-icon/nuxt.svg", id: "nuxt" }
           ]
         ],
-        backEnd: [
+        "Back-end": [
           [
             { name: "Django", logo: "skills-icon/django.svg", id: "django" },
             { name: "Flask", logo: "skills-icon/flask.svg", id: "flask" },
