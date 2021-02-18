@@ -34,17 +34,13 @@ export default {
   data() {
     return {
       frontEnd: [
-        [
-          { name: "HTML" },
-          { name: "CSS" },
-          { name: "SCSS" },
-          { name: "JavaScript" }
-        ],
-        [{ name: "React" }, { name: "Vue" }, { name: "Nuxt" }]
+        [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
+        [{ name: "React" }, { name: "Next" }],
+        [{ name: "Vue" }, { name: "Nuxt" }]
       ],
       backEnd: [
-        [{ name: "Ruby on Rails" }, { name: "Django" }, { name: "Firebase" }],
-        [{ name: "SQL" }, { name: "Firestore" }]
+        [{ name: "Django" }, { name: "Flask" }, { name: "Ruby on Rails" }],
+        [{ name: "SQL" }, { name: "MongoDB" }]
       ]
     };
   }
