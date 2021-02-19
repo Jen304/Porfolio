@@ -57,7 +57,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .content {
-  width: 40%;
   max-width: 600px;
+  padding: 0 15px;
 }
 </style>
